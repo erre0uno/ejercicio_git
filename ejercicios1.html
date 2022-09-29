@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases Fedesoft</title>
+    <script src="./js/page.js"></script>
+    <link rel="stylesheet" href="./css/page.css">
+
+</head>
+
+<body onload="inicio()">
+
+    <!-- 
+        ACTIVIDAD:
+    •	Evento onload() se utiliza para ejecutar algún bloque de código cuando carga la pagina, se coloca dentro del body;
+    1)	Crear una función que muestre un mensaje de bienvenida en un alert()
+    2)	Función que permita registrar información dentro de un div utilizando prompt
+    3)	Función que permita aplicar márgenes a ese div. Solicitados desde un prompt
+    4)	Función que alinee el texto al centro, a la derecha, a la izquierda o justificada (select) del mismo div
+    5)	Función que aplique diferentes tipos de bordes solicitado por el usuario al mismo div.
+    6)	Función que aumente el tamaño del texto (select) * consulta al mismo div
+    7)	Función que permita cambiar el background de la imagen de otro div
+
+    -->
+
+    <br>
+    <h5>div uno</h5><br>
+    <div id="mensaje">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos ullam voluptas. Perferendis provident quidem alias doloremque iure eius sit maiores ut ipsum velit nihil molestiae quisquam totam, corporis accusantium.
+    </div><br>
+    <label for="">añadir mensaje </label> <button type="button" onclick="mensajePrompt()"> mensaje </button> <br>
+    <label for="">aplicar margenes </label> <button type="button" onclick="margenes()"> margenes </button> <br>
+    <label for="">alinear texto </label> <select name="alinear" id="" onchange="alinear(this)"> 
+        <option value="center">center</option>
+        <option value="justify">justify</option>
+        <option value="left">left</option>
+        <option value="right">right</option>
+    </select>
+    <label for=""> aplicar bordes </label>
+    <select name="bordes" id="" onchange="bordes(this)">
+        <option value="top">top</option>
+        <option value="bottom">bottom</option>
+        <option value="left">left</option>
+        <option value="right">right</option>
+    </select>
+    <label for=""> tamaño de fuente </label>
+    <select name="texto" id="" onchange="texto(this)">
+        <option value="10">10</option>
+        <option value="20">20</option>
+    </select>
+    <br>
+    <hr>
+    <h5>div dos</h5><br>
+    <div id="fondo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos ullam voluptas. Perferendis provident quidem alias doloremque iure eius sit maiores ut ipsum velit nihil molestiae quisquam totam, corporis accusantium.
+    </div>
+    <br>
+    <label for=""> cambio de fondo </label><select name="bordes" id="" onchange="backgroundChange(this)">
+        <option value="red">rojo</option>
+        <option value="green">verde</option>
+        <option value="blue">azul</option>
+    </select>
+
+
+
+
+</body>
+
+</html>
