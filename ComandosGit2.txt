@@ -1,0 +1,31 @@
+//Comandos Git - Github
+
+//FeedBack
+
+1. git init -> Indicar que vas a utilizar git
+2. git add filename / git add . -> agrega los archivos a ser siguir seguidos por git (colocarlo en stage)
+3. git commit -m "Comentario" 
+4. git log -> muestra los reistros de lod diferentes commit realizados - estos se identifican con un hash 12627282882ht
+5. git config --global user.name + nombre -> Registra el nombre de usuario
+6. git config --global user.email->  "           "     correo
+7. git config --list o -l --> muestra todas las configuraciones
+8. git status -->  lleva el estado del proceso correspondiente 
+9. git remote add (origin) https://github.com/usuario/nombrerepositorio.git
+10. git push -u (origin)
+----------------------------------------------------------------------------------------------------------------------------
+
+11. git clone --> clonar un repositorio;  git clone https://github.com/usuario/nombrerepositorio.git
+12. git branch (rama) --> bifurcacion de la rama principal(master) 
+
+master                   rama1
+
+                        function2 -- git add . git commit  (fastforward)
+function2
+
+
+
+
+master                    rama1
+function3 git add . 
+
+git checkout --> cambiar de rama
