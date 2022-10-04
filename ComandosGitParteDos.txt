@@ -1,0 +1,40 @@
+//Git 
+git checkout -b mybranch -> crea y se accede directamente a la rama
+
+git branch -d mybranch -> Elimina la rama correspondiente; estando en master
+
+git branch -D mybranch -> Forza la eliminacion de una rama
+
+git pull -> para actualizar el repositorio local
+
+git tag -> crea etuqetas para describir la version de tus archivos (proyecto) que posteriormente pueden ser descargadas (.zip o .rar)
+
+git tag -d tagname -> borra o elimina tag en local
+
+git push origin :refs/tags/Version1.0 -> borra el tag que se encuentre en el repositorio remoto
+
+variante del anterior: git push origin --delete Version1.0
+
+git reset --> Eliminar 
+
+git reset HEAD^  --hard -> Elimna el ultimo commit y la informacion
+
+git reset HEAD^^  --hard -> elimna los dos ultimos commits y la informacion (que no esten en Remoto)
+
+git reset HEAD^ --soft -> Elimina solo el ultimo commit
+
+git config --global alias.chk checkout --> git chk branch
+
+git config --global alias.br branch
+
+git config --global alias.co commit
+
+git config --global alias.st status
+
+*git config --global alias.a  add .
+
+
+git cherry-pick 
+git stash 
+git stash-pop
+
